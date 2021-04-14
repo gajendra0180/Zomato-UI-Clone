@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 1vh;
-    /* background-color: black; */
+    /* background-color: whitesmoke; */
 }
 
 .top-nav-bar-zomato-icon>img {
@@ -29,6 +29,13 @@
     transition: .8s;
 }
 
+.svgs {
+    position: relative;
+    left: 2vw;
+    top: .9vw;
+    /* display: flex; */
+}
+
 .top-nav-bar-search-icon-city {
     display: flex;
     flex-wrap: wrap;
@@ -37,8 +44,10 @@
     height: 7vh;
     transition: .8s;
     text-align: center;
+    justify-content: space-between;
     box-shadow: 2px 8px 20px whitesmoke;
     border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .top-nav-bar-search-icon-city:hover {
@@ -48,15 +57,22 @@
 .top-nav-bar-search-bar-search {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     outline: none;
     height: 7vh;
     border: none;
+    transition: .8s;
     width: 28vw;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     box-shadow: 2px 8px 20px whitesmoke;
     border-radius: 0.5rem;
+}
+
+.search-icon {
+    position: relative;
+    left: 2vw;
 }
 
 .top-nav-bar-search-bar-search :hover {
@@ -77,6 +93,16 @@
     user-select: none;
     cursor: pointer;
     font-size: 1.05rem;
+    font-weight: 500;
     border-radius: 0.6rem;
     letter-spacing: 1px;
+    transition: .5s;
+}
+
+.top-nav-bar-login:hover {
+    transform: scale(1.2);
+}
+
+.top-nav-bar-signup:hover {
+    transform: scale(1.2);
 }
