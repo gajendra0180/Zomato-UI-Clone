@@ -1,0 +1,21 @@
+0 -	overall-container	
+1-	top-nav-bar
+2-	top-nav-bar-zomato-icon
+3-	top-nav-bar-search-bar
+19-	top-nav-bar-search-icon-city
+20-	top-nav--bar-search-bar-search
+4-	top-nav-bar-logsig
+5-	top-nav-bar-login
+6-	top-nav-bar-signup
+7-	delivdiningnightlife
+8-	Delivery
+9-	DiningOut
+10-	NightLife
+11-	Ad
+12-	FiltersBar
+13-	Filters
+14-	Rating
+15-	Safe
+16-	Pureveg
+17-	DeliveryTime
+18-	GreatOffers

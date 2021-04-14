@@ -1,0 +1,82 @@
+.body {
+    user-select: none;
+}
+
+.overall-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top-nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1vh;
+    /* background-color: black; */
+}
+
+.top-nav-bar-zomato-icon>img {
+    height: 4vh;
+    margin-top: 4vh;
+}
+
+.top-nav-bar-search-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2.4vh;
+    transition: .8s;
+}
+
+.top-nav-bar-search-icon-city {
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
+    border: none;
+    height: 7vh;
+    transition: .8s;
+    text-align: center;
+    box-shadow: 2px 8px 20px whitesmoke;
+    border-radius: 0.5rem;
+}
+
+.top-nav-bar-search-icon-city:hover {
+    box-shadow: 2px 8px 20px rgb(219, 218, 218);
+}
+
+.top-nav-bar-search-bar-search {
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
+    height: 7vh;
+    border: none;
+    width: 28vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 8px 20px whitesmoke;
+    border-radius: 0.5rem;
+}
+
+.top-nav-bar-search-bar-search :hover {
+    box-shadow: 2px 8px 20px rgb(219, 218, 218);
+}
+
+.top-nav-bar-logsig {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3vh;
+}
+
+.top-nav-bar-login,
+.top-nav-bar-signup {
+    margin-right: 20px;
+    color: rgb(105, 105, 105);
+    user-select: none;
+    cursor: pointer;
+    font-size: 1.05rem;
+    border-radius: 0.6rem;
+    letter-spacing: 1px;
+}
