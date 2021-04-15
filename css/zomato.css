@@ -109,6 +109,7 @@
 
 .delivdiningnightlife {
     display: flex;
+    position: sticky;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 50vw;
@@ -155,4 +156,14 @@
     border-bottom-color: rgb(235, 64, 64);
     border-bottom-width: 0.22rem;
     border-bottom-style: solid;
+}
+
+.Ad {
+    display: flex;
+    justify-content: center;
+}
+
+.Ad>img {
+    width: 80vw;
+    cursor: pointer;
 }
