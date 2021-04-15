@@ -167,3 +167,56 @@
     width: 80vw;
     cursor: pointer;
 }
+
+.filtersbar {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.filters,
+.rating,
+.safe,
+.pureveg,
+.deliverytime,
+.greatoffers {
+    margin-right: 1vw;
+    transition: 0.8s;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 0.3rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    box-shadow: rgb(54 54 54 / 6%) 0px 1px 2px;
+    color: rgb(156, 156, 156);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    /* font-size: 1.4rem; */
+    font-family: Okra, Helvetica, sans-serif;
+}
+
+.filters:hover {
+    box-shadow: 2px 2px 4px;
+}
+
+.rating:hover {
+    box-shadow: 2px 2px 4px;
+}
+
+.safe:hover {
+    box-shadow: 2px 2px 4px;
+}
+
+.pureveg:hover {
+    box-shadow: 2px 2px 4px;
+}
+
+.deliverytime:hover {
+    box-shadow: 2px 2px 4px;
+}
+
+.greatoffers:hover {
+    box-shadow: 2px 2px 4px;
+}
