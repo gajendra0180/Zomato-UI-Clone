@@ -290,6 +290,8 @@
     border-radius: 5%;
     box-shadow: 2px 4px 8px rgb(163, 163, 163);
     transition: .6s;
+    /* You can remove this if this violates responsiveness */
+    max-height: 60vh;
 }
 
 .card:hover {
@@ -311,6 +313,30 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.best-food-in-agra-overall-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 10vh;
+}
+
+.best-food-in-agra-container1,
+.best-food-in-agra-container2,
+.best-food-in-agra-container3,
+.best-food-in-agra-container4,
+.best-food-in-agra-container5 {
+    margin-bottom: 5vh;
+}
+
+.card-img-top {
+    border-radius: 5%;
+    max-height: 35vh;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 1024px) {
