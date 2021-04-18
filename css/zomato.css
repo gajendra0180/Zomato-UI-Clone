@@ -287,6 +287,7 @@
 .card {
     cursor: pointer;
     margin-right: 2vw;
+    /* max-width: 100%; */
     border-radius: 5%;
     box-shadow: 2px 4px 8px rgb(163, 163, 163);
     transition: .6s;
@@ -357,6 +358,126 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.explore-other-options-text {
+    margin-left: 10vw;
+    font-size: 33px;
+    display: flex;
+    margin-bottom: 4vh;
+    font-weight: 400;
+    letter-spacing: .2vw;
+    /* justify-content: center; */
+    user-select: none;
+}
+
+.popular-cuisines-near,
+.popular-restaurants-text,
+.cities-we-deliver-text {
+    margin-left: 10vw;
+    font-size: 28px;
+    display: flex;
+    margin-bottom: 4vh;
+    font-weight: 400;
+    letter-spacing: .2vw;
+    /* justify-content: center; */
+    user-select: none;
+}
+
+.popular-cuisines-names,
+.popular-restaurants-names {
+    margin-left: 10vw;
+    font-size: 17px;
+    display: flex;
+    margin-bottom: 4vh;
+    font-weight: 200;
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+    /* letter-spacing: .2vw; */
+    /* justify-content: center; */
+    user-select: none;
+    margin-bottom: 15vh;
+    transition: .5s;
+}
+
+.popular-cuisines-names:hover {
+    transform: scale(1.03);
+}
+
+.popular-restaurants-names:hover {
+    transform: scale(1.03);
+}
+
+.cities-container-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.cities-we-deliver-box {
+    margin-bottom: 10vh;
+}
+
+.cities {
+    cursor: pointer;
+    color: rgb(130, 130, 130);
+    transition: .6s;
+}
+
+.cities:hover {
+    transform: scale(1.08);
+}
+
+.ending-box {
+    background-color: rgb(248, 248, 248);
+}
+
+.end-bar {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /* margin-bottom: 5vh; */
+}
+
+.zomato-icon>img {
+    height: 4vh;
+    margin-top: 4vh;
+    margin-left: 1vw;
+}
+
+.other-links-outer-box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.company,
+.for-foodies,
+.for-restaurants,
+.for-you,
+.social-links {
+    font-weight: 500;
+    margin-bottom: 4vh;
+}
+
+.company-links,
+.for-foodies-links,
+.for-restaurants-links,
+.for-you-links {
+    color: rgb(119, 111, 111);
+    cursor: pointer;
+}
+
+.language-country-box {
+    display: flex;
+    justify-content: center;
+}
+
+.country-button {
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
