@@ -185,9 +185,9 @@
 .pureveg,
 .deliverytime,
 .greatoffers,
-.btn-primary,
+.btn-group>.btn-primary,
 .dropdown-toggle,
-.btn {
+.btn-group>.btn {
     margin-right: 1vw;
     transition: 0.8s;
     outline: none;
@@ -205,7 +205,7 @@
     font-family: Okra, Helvetica, sans-serif;
 }
 
-.btn-primary:hover {
+.btn-group>.btn-primary:hover {
     margin-right: 1vw;
     transition: 0.8s;
     outline: none;
@@ -291,12 +291,13 @@
     box-shadow: 2px 4px 8px rgb(163, 163, 163);
     transition: .6s;
     /* You can remove this if this violates responsiveness */
-    max-height: 60vh;
+    max-height: 70vh;
 }
 
 .card:hover {
     box-shadow: 4px 8px 16px grey;
     transform: scale(1.06);
+    z-index: 1;
 }
 
 .top-brands-box {
@@ -339,6 +340,25 @@
     object-fit: cover;
 }
 
+.card-body>.btn {
+    /* margin-left: 15vw; */
+    /* margin-top: 2vh; */
+    box-shadow: 2px 4px 8px grey;
+    transition: .6s;
+    margin-bottom: 2vh;
+}
+
+.card-body>.btn:hover {
+    box-shadow: 4px 8px 16px rgb(48, 47, 47);
+    transform: scale(1.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 1024px) {
     .svgs {
         left: 4vw;
@@ -358,6 +378,7 @@
         margin-right: 1vw;
         max-width: 100%;
         margin-bottom: 3vh;
+        max-height: 75vh;
     }
     .inspiration-order-food-card-container {
         margin-left: 2vw;
@@ -396,6 +417,19 @@
     .diningout,
     .nightlife {
         margin-bottom: 2vh;
+    }
+    .card {
+        max-height: 80vh;
+    }
+    .card-body>.btn {
+        box-shadow: 2px 4px 8px grey;
+        transition: .6s;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .card-body>.btn:hover {
+        box-shadow: 4px 8px 16px rgb(48, 47, 47);
+        transform: scale(1.05);
     }
 }
 
