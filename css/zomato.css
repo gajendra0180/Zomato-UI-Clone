@@ -480,6 +480,18 @@
     align-items: center;
 }
 
+.by-continuing {
+    color: rgb(79, 79, 79);
+    margin-top: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: small;
+    margin-bottom: 8vh;
+}
+
 @media only screen and (max-width: 1024px) {
     .svgs {
         left: 4vw;
