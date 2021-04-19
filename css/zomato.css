@@ -303,10 +303,15 @@
     display: none;
 }
 
-.card {
+.card,
+.card1,
+.card2,
+.card3 {
     cursor: pointer;
     margin-right: 2vw;
-    /* max-width: 100%; */
+    max-width: 50vw;
+    /* justify-content: center; */
+    /* align-items: center; */
     border-radius: 5%;
     box-shadow: 2px 4px 8px rgb(163, 163, 163);
     transition: .6s;
@@ -340,7 +345,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
     margin-left: 7vw;
     margin-right: 7vw;
     margin-bottom: 10vh;
@@ -546,6 +553,9 @@
 
 @media only screen and (max-width: 600px) {
     .top-nav-bar-search-icon-city {
+        display: none;
+    }
+    .Ad {
         display: none;
     }
     .svgs {
