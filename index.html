@@ -9,9 +9,12 @@
     <title>Food</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
+    <script src="js/appjs.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bfcc91e13d.js" crossorigin="anonymous"></script>
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/zomato.css">
@@ -167,8 +170,8 @@
             </div>
         </div>
 
-        <div class="delivdiningnightlife">
-            <div class="delivery">
+        <div class="delivdiningnightlife ">
+            <div class="delivery ">
                 <img src="/images/delivery.webp" alt="">
                 <h3>Delivery</h3>
             </div>
@@ -180,7 +183,15 @@
                 <img src="/images/NightLife.webp" alt="">
                 <h3>NightLife</h3>
             </div>
+            <div class="cart float-right">
+                <button type="button" class="btn btn-warning ">
+                    <span class="cart"><i class="fas fa-cart-arrow-down"></i></span>
+                    GO TO CART<span class="badge badge-secondary" id="itemcount">1</span>    
+                    <span class="sr-only">GO TO CART</span>
+                  </button>
+            </div>
         </div>
+
         <hr>
 
         <div class="Ad">
@@ -281,7 +292,7 @@
                         <img src="images/Dal-Bati.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Dal Baati & Co.</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Rajasthani</p>
                             <p>₹300 for one&nbsp;&nbsp☯&nbsp;&nbsp33min</p>
                         </div>
@@ -290,7 +301,7 @@
                         <img src="images/Subway.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Subway</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Healthy Food, Sandwich, Salad, Wraps, Fast Food, Beverages</p>
                             <p>₹200 for one&nbsp;&nbsp;☯&nbsp;&nbsp 19 min</p>
                         </div>
@@ -299,7 +310,7 @@
                         <img src="images/pizzacheese.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Domino's Pizza</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Pizza,Fast Food</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp30min</p>
                         </div>
@@ -312,7 +323,7 @@
                         <img src="images/Mc-Donald.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">McDonald's</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Burger, Fast Food, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp32min</p>
                         </div>
@@ -321,7 +332,7 @@
                         <img src="images/6th street.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">6th Street Yogurt</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Desserts</p>
                             <p>₹150 for one&nbsp;&nbsp;☯&nbsp;&nbsp 35 min</p>
 
@@ -331,7 +342,7 @@
                         <img src="images/belgiumwaffle.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">The Belgian Waffle Co.</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Desserts, Ice Cream, Fast Food, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp32min</p>
                         </div>
@@ -354,7 +365,7 @@
                         <img src="images/lucky.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Lucky Restaurant</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Biryani, North Indian, Chinese, Fast Food, Mughlai, Desserts</p>
                             <p>₹250 for one&nbsp;&nbsp;☯&nbsp;&nbsp 32 min</p>
@@ -365,7 +376,7 @@
                         <img src="images/2xtopping.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">MOJO Pizza - 2X Toppings</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Pizza, Italian, Fast Food</p>
                             <p>₹250 for one&nbsp;&nbsp☯&nbsp;&nbsp33min</p>
@@ -379,7 +390,7 @@
                         <img src="images/burgerking.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Burger King</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Burger, Fast Food, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp;28min</p>
@@ -389,7 +400,7 @@
                         <img src="images/babafalooda.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Baba Falooda</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Desserts, Ice Cream, Beverages</p>
                             <p>₹100 for one&nbsp;&nbsp;☯&nbsp;&nbsp 27 min</p>
@@ -399,7 +410,7 @@
                         <img src="images/theobroma.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Theobroma</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Bakery, Desserts, Fast Food, Sandwich, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp;19min</p>
@@ -413,7 +424,7 @@
                         <img src="images/kirthi.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Kirti Mahal Legacy</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">South Indian, North Indian, Chinese, Fast Food, Pizza, Beverages, Desserts</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp;29min</p>
@@ -423,7 +434,7 @@
                         <img src="images/arya.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Arya Bhavan</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">South Indian, Fast Food, Beverages, Street Food, Sandwich, Juices</p>
                             <p>₹100 for one&nbsp;&nbsp;☯&nbsp;&nbsp 23 min</p>
@@ -434,7 +445,7 @@
                         <img src="images/biscuit.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">bachelor's</h5>
-                            <button type="button" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" onclick="addtocart()" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Beverages, Fast Food, Desserts, Ice Cream, Pizza</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp20min</p>
