@@ -133,6 +133,10 @@
     box-shadow: 2px 4px 8px rgb(136, 135, 135);
 }
 
+.badge {
+    font-size: large;
+}
+
 .delivery,
 .diningout,
 .nightlife {

@@ -183,17 +183,17 @@
                 <img src="/images/NightLife.webp" alt="">
                 <h3>NightLife</h3>
             </div>
-            <div class="cart float-right">
-                <button type="button" class="btn btn-warning ">
+            <div class="cart float-right" id="cart">
+                <button type="button" onclick="gotocart()" class="btn btn-warning ">
                     <span class="cart"><i class="fas fa-cart-arrow-down"></i></span>
-                    GO TO CART <span class="badge badge-dark" id="itemcount">10</span>    
+                    GO TO CART <span class="badge badge-light" id="itemcount"></span>    
                     <span class="sr-only">GO TO CART</span>
                   </button>
             </div>
         </div>
 
         <hr>
-
+    <div class="cartdisplayONOFF" id="cartdisplay">
         <div class="Ad">
             <img src="/images/Ad.webp" alt="">
         </div>
@@ -282,7 +282,7 @@
                 <div class="top-brand-card-scroll"></div>
             </div>
         </div>
-        <hr>
+        <hr>    
 
         <div class="best-food-in-agra-overall-container">
             <div class="inspiration-order-text ">Best Food in Agra</div>
@@ -455,7 +455,7 @@
             </div>
         </div>
         <hr>
-
+    </div>
         <div class="explore-other-options-box">
             <div class="explore-other-options-text">Explore other options for you here</div>
             <hr>
