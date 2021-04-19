@@ -1,5 +1,6 @@
 .body {
     user-select: none;
+    overflow: hidden;
 }
 
 .overall-container {
@@ -277,10 +278,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .inspiration-order-text {
-    margin-left: 10vw;
+    margin-left: 3vw;
     font-size: 33px;
     display: flex;
     margin-bottom: 4vh;
@@ -295,6 +298,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     margin-bottom: 5vh;
     justify-content: center;
 }
@@ -309,7 +313,7 @@
 .card3 {
     cursor: pointer;
     margin-right: 2vw;
-    max-width: 50vw;
+    max-width: 100%;
     /* justify-content: center; */
     /* align-items: center; */
     border-radius: 5%;
@@ -444,6 +448,8 @@
 
 .cities-we-deliver-box {
     margin-bottom: 10vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
 }
 
 .cities {
@@ -475,6 +481,7 @@
 .other-links-outer-box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -510,6 +517,7 @@
     color: rgb(79, 79, 79);
     margin-top: 2.3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -593,6 +601,9 @@
     .card-body>.btn:hover {
         box-shadow: 4px 8px 16px rgb(48, 47, 47);
         transform: scale(1.05);
+    }
+    .language-country-box {
+        margin-top: 24px;
     }
 }
 
