@@ -17,17 +17,26 @@ var priceobj = {
     "card14": 100,
     "card15": 150,
 };
-
 var price = 0;
+displaypaynow = 0;
+var turu = 0;
+var turuquestion;
 
 function addtocart(ids) {
-    alert("𝓒𝓞𝓝𝓖𝓞 🎉 𝓘𝓣𝓔𝓜 𝓐𝓓𝓓𝓔𝓓 𝓣𝓞 𝓒𝓐𝓡𝓣 😂");
-    arr.push(ids);
+    turuquestion = ids;
     document.getElementById("itemcount").innerHTML = itemcount;
     itemcount++;
 }
 
+function turus(element) {
+    turu = element;
+    if (turu == 1) {
+        arr.push(turuquestion);
+    }
+}
+
 function gotocart() {
+    displaypaynow = 1;
     document.getElementById("cart").innerHTML = "";
     document.getElementById("card1").style.display = "none";
     document.getElementById("card2").style.display = "none";
@@ -57,13 +66,21 @@ function gotocart() {
 
 
     document.getElementById("totalamount").style.marginBottom = "100px";
-    // document.getElementById("totalamount").style.top = "-21vh";
+
 
     for (let i = 0; i < arr.length; i++) {
         document.getElementById(arr[i]).style.display = "flex";
         price += priceobj[arr[i]];
         console.log(priceobj[arr[i]])
     }
-    document.getElementById("totalamount").innerHTML = ' <div class="popular-restaurants-text">Total Amount : ₹ ' + price + ' </div>';
+    document.getElementById("totalamount").innerHTML = ' <div class="popular-restaurants-text totalamount">Total Amount : ₹ ' + price + ' </div>';
 
+    if (displaypaynow) {
+        document.getElementById("dropdown").style.display = "flex";
+    }
+
+}
+
+function promocode() {
+    prompt("Enter Your Promo Code");
 }

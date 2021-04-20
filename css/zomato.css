@@ -199,6 +199,27 @@
     justify-content: center;
 }
 
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 10vw;
+    display: none;
+    position: relative;
+    top: 7vh;
+}
+
+.dropdown>button {
+    background-color: #ffbb33;
+    color: black;
+    padding: 1% 2%;
+    box-shadow: 2px 4px 8px rgb(189, 187, 187);
+}
+
+.dropdown-item {
+    font-size: large;
+}
+
 .filters,
 .rating,
 .safe,
@@ -604,6 +625,19 @@
     }
     .language-country-box {
         margin-top: 24px;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        display: none;
+        position: relative;
+        top: 17vh;
+    }
+    .totalamount {
+        justify-content: center;
+        position: relative;
+        top: -2vh;
     }
 }
 

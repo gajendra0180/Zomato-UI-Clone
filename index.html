@@ -15,6 +15,9 @@
     <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bfcc91e13d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/zomato.css">
@@ -121,7 +124,6 @@
 -->
 
 <body>
-
 
 
     <div class="overallcontainer">
@@ -292,7 +294,7 @@
                         <img src="images/Dal-Bati.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Dal Baati & Co.</h5>
-                            <button type="button" id="card1" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card1" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Rajasthani</p>
                             <p>₹300 for one&nbsp;&nbsp☯&nbsp;&nbsp33min</p>
                         </div>
@@ -301,7 +303,7 @@
                         <img src="images/Subway.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Subway</h5>
-                            <button type="button" id="card2" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card2" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Healthy Food, Sandwich, Salad, Wraps, Fast Food, Beverages</p>
                             <p>₹200 for one&nbsp;&nbsp;☯&nbsp;&nbsp 19 min</p>
                         </div>
@@ -310,7 +312,7 @@
                         <img src="images/pizzacheese.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Domino's Pizza</h5>
-                            <button type="button" id="card3" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card3" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Pizza,Fast Food</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp30min</p>
                         </div>
@@ -323,7 +325,7 @@
                         <img src="images/Mc-Donald.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">McDonald's</h5>
-                            <button type="button" id="card4" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card4" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Burger, Fast Food, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp32min</p>
                         </div>
@@ -332,7 +334,7 @@
                         <img src="images/6th street.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">6th Street Yogurt</h5>
-                            <button type="button" id="card5" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card5" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Desserts</p>
                             <p>₹150 for one&nbsp;&nbsp;☯&nbsp;&nbsp 35 min</p>
 
@@ -342,7 +344,7 @@
                         <img src="images/belgiumwaffle.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">The Belgian Waffle Co.</h5>
-                            <button type="button" id="card6" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card6" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
                             <p class="card-text">Desserts, Ice Cream, Fast Food, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp32min</p>
                         </div>
@@ -355,7 +357,7 @@
                         <img src="images/pav.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">DP's The Fast Food Centre</h5>
-                            <button type="button" id="card7" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card7" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Chinese, Fast Food, South Indian, Street Food, Sandwich, Beverages, Continental</p>
                             <p>₹200 for one&nbsp;&nbsp☯&nbsp;&nbsp30min</p>
@@ -365,7 +367,7 @@
                         <img src="images/lucky.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Lucky Restaurant</h5>
-                            <button type="button" id="card8" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card8" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Biryani, North Indian, Chinese, Fast Food, Mughlai, Desserts</p>
                             <p>₹250 for one&nbsp;&nbsp;☯&nbsp;&nbsp 32 min</p>
@@ -376,7 +378,7 @@
                         <img src="images/2xtopping.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">MOJO Pizza - 2X Toppings</h5>
-                            <button type="button" id="card9" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card9" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Pizza, Italian, Fast Food</p>
                             <p>₹250 for one&nbsp;&nbsp☯&nbsp;&nbsp33min</p>
@@ -390,7 +392,7 @@
                         <img src="images/burgerking.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Burger King</h5>
-                            <button type="button" id="card10" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card10" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Burger, Fast Food, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp;28min</p>
@@ -400,7 +402,7 @@
                         <img src="images/babafalooda.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Baba Falooda</h5>
-                            <button type="button" id="card11" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card11" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Desserts, Ice Cream, Beverages</p>
                             <p>₹100 for one&nbsp;&nbsp;☯&nbsp;&nbsp 27 min</p>
@@ -410,7 +412,7 @@
                         <img src="images/theobroma.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Theobroma</h5>
-                            <button type="button" id="card12" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card12" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Bakery, Desserts, Fast Food, Sandwich, Beverages</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp;19min</p>
@@ -424,7 +426,7 @@
                         <img src="images/kirthi.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Kirti Mahal Legacy</h5>
-                            <button type="button" id="card13" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card13" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">South Indian, North Indian, Chinese, Fast Food, Pizza, Beverages, Desserts</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp;29min</p>
@@ -434,7 +436,7 @@
                         <img src="images/arya.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Arya Bhavan</h5>
-                            <button type="button" id="card14" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card14" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">South Indian, Fast Food, Beverages, Street Food, Sandwich, Juices</p>
                             <p>₹100 for one&nbsp;&nbsp;☯&nbsp;&nbsp 23 min</p>
@@ -445,7 +447,7 @@
                         <img src="images/biscuit.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">bachelor's</h5>
-                            <button type="button" id="card15" onclick="addtocart(id)" class="btn btn-dark">Add To Cart</button>
+                            <button type="button" id="card15" onclick="addtocart(id)" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Add To Cart</button>
 
                             <p class="card-text">Beverages, Fast Food, Desserts, Ice Cream, Pizza</p>
                             <p>₹150 for one&nbsp;&nbsp☯&nbsp;&nbsp20min</p>
@@ -455,7 +457,23 @@
             </div>
 
         </div>
-        <div id="totalamount"></div>
+
+
+        <div class="dropdown" id="dropdown">
+            <button class="btn btn-success btn-outline-warning btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pay Now
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" onclick="promocode()">USE PROMO CODE</a>
+                <a class="dropdown-item" href="#">PAY WITH CREDIT CARD</a>
+            </div>
+        </div>
+        <div id="totalamount" class="totalamount"></div>
+
+
+
+
+
         <hr>
         <!-- </div> -->
         <div class="explore-other-options-box">
@@ -547,6 +565,29 @@
 
     </div>
 
+
+
+    <!-- Modal code-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">アイテムを追加</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body">
+                    ᗪㄖ ㄚㄖㄩ 山卂几ㄒ ㄒㄖ 卂ᗪᗪ ㄒ卄丨丂 丨ㄒ乇爪 ㄒㄖ 匚卂尺ㄒ
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+                    <button type="button" class="btn btn-primary close" data-dismiss="modal" onclick="turus(1)">Add Item To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal code till here-->
 
 
 </body>
