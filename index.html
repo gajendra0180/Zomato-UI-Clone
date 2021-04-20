@@ -455,8 +455,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
+
 
 
         <div class="dropdown" id="dropdown">
@@ -464,8 +465,8 @@
               Pay Now
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" onclick="promocode()">USE PROMO CODE</a>
-                <a class="dropdown-item" href="#">PAY WITH CREDIT CARD</a>
+                <a class="dropdown-item" onclick="promocode()" data-toggle="modal" data-target="#exampleModal2">USE PROMO CODE</a>
+                <a class="dropdown-item" onclick="creditcardpayment()" data-toggle="modal" data-target="#exampleModal2">PAY WITH CREDIT CARD</a>
             </div>
         </div>
         <div id="totalamount" class="totalamount"></div>
@@ -567,22 +568,44 @@
 
 
 
-    <!-- Modal code-->
+    <!-- Modal1 code-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">アイテムを追加</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">🅰🅳🅳 🅸🆃🅴🅼
+                    </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
                 </div>
                 <div class="modal-body">
-                    ᗪㄖ ㄚㄖㄩ 山卂几ㄒ ㄒㄖ 卂ᗪᗪ ㄒ卄丨丂 丨ㄒ乇爪 ㄒㄖ 匚卂尺ㄒ
-                </div>
+                    𝔻𝕆 𝕐𝕆𝕌 𝕎𝔸ℕ𝕋 𝕋𝕆 𝔸𝔻𝔻 𝕋ℍ𝕀𝕊 𝕀𝕋𝔼𝕄 𝕋𝕆 ℂ𝔸ℝ𝕋 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
                     <button type="button" class="btn btn-primary close" data-dismiss="modal" onclick="turus(1)">Add Item To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal code till here-->
+
+    <!-- Modal2 code-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModal2Label"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+                </div>
+                <div class="modal-body" id="modal2body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                    <button type="button" class="btn btn-primary close" data-dismiss="modal">Ok</button>
                 </div>
             </div>
         </div>

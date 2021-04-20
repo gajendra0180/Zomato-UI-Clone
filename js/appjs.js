@@ -122,5 +122,17 @@ function gotostore() {
 }
 
 function promocode() {
-    prompt("Enter Your Promo Code");
+    var code = prompt("Enter Your Promo Code");
+    if (code == "AXHKJ") {
+        document.getElementById("modal2body").innerHTML = "CONGRATS 🎉,YOU HAVE USED YOUR PROMOCODE. WE WILL SHORTLY DELIVER THE FOOD TO YOUR LOCATION KEEP YOUR DEVICE LOCATION ON WE WILL BE TRACKING YOU FROM THERE";
+        document.getElementById("exampleModal2Label").innerHTML = "😊 🆂🆄🅲🅲🅴🆂🆂"
+    } else {
+        document.getElementById("modal2body").innerHTML = "SORRY, BUT THE PROMOCODE YOU ENTERED IS NOT VALID.TRY ANOTHER ONE OR CONTACT THE ADMINISTRATOR GAJENDRA PAL at gajendrahitz@gmail.com or 📞 +919557139559 FOR FURTHER PROMO CODE VALIDATION";
+        document.getElementById("exampleModal2Label").innerHTML = "😔 🅵🅰🅸🅻🆄🆁🅴"
+    }
+}
+
+function creditcardpayment() {
+    document.getElementById("exampleModal2Label").innerHTML = "😔 🅵🅰🅸🅻🆄🆁🅴"
+    document.getElementById("modal2body").innerHTML = "😂SORRY BUT THIS FEATURE IS STILL NOT AVAILABLE,CONTACT THE ADMINISTRATOR GAJENDRA PAL at gajendrahitz@gmail.com or 📞 +919557139559 FOR FURTHER INFORMATION";
 }
