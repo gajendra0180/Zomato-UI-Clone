@@ -126,6 +126,9 @@ function promocode() {
     if (code == "AXHKJ") {
         document.getElementById("modal2body").innerHTML = "CONGRATS 🎉,YOU HAVE USED YOUR PROMOCODE. WE WILL SHORTLY DELIVER THE FOOD TO YOUR LOCATION KEEP YOUR DEVICE LOCATION ON WE WILL BE TRACKING YOU FROM THERE";
         document.getElementById("exampleModal2Label").innerHTML = "😊 🆂🆄🅲🅲🅴🆂🆂"
+        price = 0;
+        document.getElementById("totalamount").innerHTML = ' <div class="popular-restaurants-text totalamount">Total Amount Payable : ₹ ' + price + ' </div>';
+
     } else {
         document.getElementById("modal2body").innerHTML = "SORRY, BUT THE PROMOCODE YOU ENTERED IS NOT VALID.TRY ANOTHER ONE OR CONTACT THE ADMINISTRATOR GAJENDRA PAL at gajendrahitz@gmail.com or 📞 +919557139559 FOR FURTHER PROMO CODE VALIDATION";
         document.getElementById("exampleModal2Label").innerHTML = "😔 🅵🅰🅸🅻🆄🆁🅴"
