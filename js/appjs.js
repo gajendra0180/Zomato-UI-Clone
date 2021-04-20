@@ -1,4 +1,4 @@
-var itemcount = 1;
+var itemcount = 0;
 var arr = [];
 var counterforitem = 0
 var priceobj = {
@@ -25,8 +25,9 @@ var turuquestion;
 
 function addtocart(ids) {
     turuquestion = ids;
-    document.getElementById("itemcount").innerHTML = itemcount;
     itemcount++;
+    document.getElementById("itemcount").innerHTML = itemcount;
+
 }
 
 function turus(element) {
@@ -39,6 +40,7 @@ function turus(element) {
 function gotocart() {
     displaypaynow = 1;
     document.getElementById("cart").innerHTML = '<div class="cart float-right" id="cart"> <button type="button" onclick="gotostore()" class="btn btn-danger "><span class="cart"><i class="fas fa-cart-arrow-down"></i></span>BACK TO STORE <span class="badge badge-light" id="itemcount"></span>    <span class="sr-only">BACK TO STORE</span></button></div>';
+    document.getElementById("itemcount").innerHTML = itemcount;
     document.getElementById("card1").style.display = "none";
     document.getElementById("card2").style.display = "none";
     document.getElementById("card3").style.display = "none";
@@ -92,6 +94,7 @@ function gotocart() {
 function gotostore() {
     displaypaynow = 0
     document.getElementById("cart").innerHTML = '<div class="cart float-right" id="cart"> <button type="button" onclick="gotocart()" class="btn btn-warning "><span class="cart"><i class="fas fa-cart-arrow-down"></i></span>GO TO CART<span class="badge badge-light" id="itemcount"></span>    <span class="sr-only">GO TO CART</span></button></div>';
+    document.getElementById("itemcount").innerHTML = itemcount;
     document.getElementById("card1").style.display = "flex";
     document.getElementById("card2").style.display = "flex";
     document.getElementById("card3").style.display = "flex";
