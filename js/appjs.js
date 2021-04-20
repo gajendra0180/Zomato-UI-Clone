@@ -1,5 +1,6 @@
 var itemcount = 1;
 var arr = [];
+var counterforitem = 0
 var priceobj = {
     "card1": 300,
     "card2": 200,
@@ -37,7 +38,7 @@ function turus(element) {
 
 function gotocart() {
     displaypaynow = 1;
-    document.getElementById("cart").innerHTML = "";
+    document.getElementById("cart").innerHTML = '<div class="cart float-right" id="cart"> <button type="button" onclick="gotostore()" class="btn btn-danger "><span class="cart"><i class="fas fa-cart-arrow-down"></i></span>BACK TO STORE <span class="badge badge-light" id="itemcount"></span>    <span class="sr-only">BACK TO STORE</span></button></div>';
     document.getElementById("card1").style.display = "none";
     document.getElementById("card2").style.display = "none";
     document.getElementById("card3").style.display = "none";
@@ -53,9 +54,12 @@ function gotocart() {
     document.getElementById("card13").style.display = "none";
     document.getElementById("card14").style.display = "none";
     document.getElementById("card15").style.display = "none";
-    document.getElementById("inspiration-order-box").innerHTML = "<div><hr/></div>";
 
-    document.getElementById("togglecart").innerHTML = "";
+    //insprationg for your first order doer
+    // document.getElementById("inspiration-order-box").innerHTML = "<div><hr/></div>";
+
+    document.getElementById("togglecart").style.display = "none";
+
 
     document.getElementById("best-food").marginBottom = "15vh"
     document.getElementById("best-food").style.fontSize = "50px";
@@ -70,14 +74,50 @@ function gotocart() {
 
     for (let i = 0; i < arr.length; i++) {
         document.getElementById(arr[i]).style.display = "flex";
-        price += priceobj[arr[i]];
         console.log(priceobj[arr[i]])
     }
-    document.getElementById("totalamount").innerHTML = ' <div class="popular-restaurants-text totalamount">Total Amount : ₹ ' + price + ' </div>';
-
-    if (displaypaynow) {
-        document.getElementById("dropdown").style.display = "flex";
+    for (let i = counterforitem; i < arr.length; i++) {
+        price += priceobj[arr[i]];
+        counterforitem++;
     }
+    document.getElementById("totalamount").innerHTML = ' <div class="popular-restaurants-text totalamount">Total Amount Payable : ₹ ' + price + ' </div>';
+
+
+    document.getElementById("dropdown").style.display = "flex";
+
+
+
+}
+
+function gotostore() {
+    displaypaynow = 0
+    document.getElementById("cart").innerHTML = '<div class="cart float-right" id="cart"> <button type="button" onclick="gotocart()" class="btn btn-warning "><span class="cart"><i class="fas fa-cart-arrow-down"></i></span>GO TO CART<span class="badge badge-light" id="itemcount"></span>    <span class="sr-only">GO TO CART</span></button></div>';
+    document.getElementById("card1").style.display = "flex";
+    document.getElementById("card2").style.display = "flex";
+    document.getElementById("card3").style.display = "flex";
+    document.getElementById("card4").style.display = "flex";
+    document.getElementById("card5").style.display = "flex";
+    document.getElementById("card6").style.display = "flex";
+    document.getElementById("card7").style.display = "flex";
+    document.getElementById("card8").style.display = "flex";
+    document.getElementById("card9").style.display = "flex";
+    document.getElementById("card10").style.display = "flex";
+    document.getElementById("card11").style.display = "flex";
+    document.getElementById("card12").style.display = "flex";
+    document.getElementById("card13").style.display = "flex";
+    document.getElementById("card14").style.display = "flex";
+    document.getElementById("card15").style.display = "flex";
+    document.getElementById("totalamount").innerHTML = '';
+    document.getElementById("dropdown").style.display = "none";
+
+    document.getElementById("best-food").innerHTML = "Best Food in Agra"
+    document.getElementById("best-food").marginBottom = "4vh"
+    document.getElementById("best-food").style.fontSize = "33px";
+    document.getElementById("best-food").style.textDecoration = "none";
+
+    document.getElementById("togglecart").style.display = "";
+
+
 
 }
 
