@@ -134,5 +134,5 @@ function promocode() {
 
 function creditcardpayment() {
     document.getElementById("exampleModal2Label").innerHTML = "😔 🅵🅰🅸🅻🆄🆁🅴"
-    document.getElementById("modal2body").innerHTML = "😂SORRY BUT THIS FEATURE IS STILL NOT AVAILABLE,CONTACT THE ADMINISTRATOR GAJENDRA PAL at gajendrahitz@gmail.com or 📞 +919557139559 FOR FURTHER INFORMATION";
+    document.getElementById("modal2body").innerHTML = "😂SORRY BUT THIS FEATURE IS STILL NOT AVAILABLE AT PRESENT,CONTACT THE ADMINISTRATOR GAJENDRA PAL at gajendrahitz@gmail.com or 📞 +919557139559 FOR FURTHER INFORMATION";
 }
